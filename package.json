@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "browser": "dist/vault-js.umd.production.min.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "quiaharum",
+  "author": "SabinaHickle",
+  "module": "dist/vault-js.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/vault-js.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/vault-js.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^8.1.0",
+    "husky": "^8.0.2",
+    "parcel": "^2.8.2",
+    "size-limit": "^8.1.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DayanaMraz/quiaharum.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DayanaMraz/quiaharum.git/issues"
+  },
+  "homepage": "https://github.com/DayanaMraz/quiaharum.git"
+}
